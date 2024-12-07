@@ -1,0 +1,431 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/sky.jpg'); /* Gambar latar */
+    background-size: cover;  /* Menutupi seluruh layar */
+    background-position: center; /* Memusatkan gambar */
+    background-attachment: fixed; /* Efek parallax */
+    color: #fff; /* Agar teks bisa terbaca jelas */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body, h1, h2, h3, p, a {
+    color: #003049; /* Biru gelap dominan */
+}
+
+header {
+    background: rgba(161, 217, 242, 0.3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0076b67a;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.hero .cta a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 119, 182);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.hero .cta a:hover {
+    background-color: rgba(0, 95, 138, 0.8);
+}
+
+/* Warna Font */
+body, h1, h2, h3, p, a {
+    color: #003049; /* Biru gelap dominan */
+}
+
+/* Full Flexbox */
+.services, .testimonials {
+    width: 100%; /* Memenuhi lebar halaman */
+    padding: 80px 40px;
+}
+
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 2000px;
+    background: rgba(255, 255, 255, 0.7); /* Flexbox putih transparan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow halus */
+}
+
+.services h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003049;
+}
+
+.services .service {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.services .service img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    flex: 1 1 40%;
+}
+
+.services .service-content {
+    padding: 20px;
+    flex: 1 1 60%;
+    color: #003049;
+}
+
+.services .service-content h2 {
+    font-size: 1.8em;
+    color: darkblue;
+}
+
+.services .service-content p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Order Section */
+.order {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Menyesuaikan lebar agar tidak terlalu besar */
+    max-width: 800px; /* Batasan lebar maksimum */
+    margin: 40px auto;
+    text-align: left;
+    box-sizing: border-box; /* Memastikan padding termasuk dalam lebar total */
+}
+
+.order h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003049;
+    text-align: center; /* Tetap biarkan judul berada di tengah */
+}
+
+.order p {
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center; /* Tetap biarkan teks deskripsi berada di tengah */
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px; /* Tambahkan margin bawah untuk label agar tidak menabrak input */
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Pastikan padding termasuk dalam lebar total */
+}
+
+.order-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #003049;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: flex-start; /* Tambahkan ini agar tombol submit tetap di sebelah kiri */
+}
+
+.order-form button:hover {
+    background: #002235;
+}
+
+.contact-us {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-us .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    color: #666;
+    font-size: 1em;
+}
+
+#submit { 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    background: #003049; 
+    color: #fff; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+    margin-top: 15px; 
+}
+    /* Beri jarak atas untuk memastikan tombol tidak menabrak elemen lain */ 
+    #submit:hover { 
+        background: blue;
+    }
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+    background: #1EBE55;
+}
+
+.testimonials {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Memenuhi lebar halaman */
+    margin: 40px 0;
+    text-align: left; /* Mengatur teks dalam testimonial agar rata kiri */
+    box-sizing: border-box; /* Memastikan padding termasuk dalam lebar total */
+}
+
+.testimonials h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003049;
+    text-align: center; /* Tetap biarkan judul berada di tengah */
+}
+
+.testimonial {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-style: italic;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak antara gambar dan konten */
+    text-align: left; /* Tambahkan agar konten di dalamnya rata kiri */
+}
+
+.testimonial img {
+    width: 80px; /* Ukuran lingkaran kecil */
+    height: 80px;
+    border-radius: 50%; /* Membuat bingkai lingkaran */
+    border: 2px solid #1218c5; /* Opsional: Bingkai dengan warna */
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+.testimonial h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: darkblue;
+}
+
+.testimonial p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #003049;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel h2 {
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 450px;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+
+button .carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.carousel-indicators .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .dot.active {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background: rgba(161, 217, 242, 0.3);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: darkblue;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #0077B6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

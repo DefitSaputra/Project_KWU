@@ -4,206 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisioCraft - Elevating Visuals</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(180deg, #89CFF0, #F9FAFB, #89CFF0);
-            color: #333;
-            overflow-x: hidden;
-        }
-        
-        header {
-            background: rgba(161, 217, 242, 0.3);
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(15px);
-        }
-        
-        header .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #0077B6;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav ul li {
-            margin: 0 20px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 400;;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: #0076b67a;
-        }
-        
-        .hero {
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
-        
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-        
-        .hero p {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2em;
-            font-weight: 300;
-            color: #fff;
-            margin-bottom: 2rem;
-            letter-spacing: 1px;
-        }
-        
-        .hero .cta a {
-            text-decoration: none;
-            color: white;
-            background-color: rgba(0, 119, 182);
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            backdrop-filter: blur(5px);
-        }
-        
-        .hero .cta a:hover {
-            background-color: rgba(0, 95, 138, 0.8);
-        }
-        
-        .services {
-            padding: 80px 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 1200px;
-        }
-        
-        .services h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-        
-        .services .service {
-            display: flex;
-            align-items: center;
-            margin: 40px auto;
-            max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(15px);
-        }
-        
-        .services .service img {
-            width: 50%;
-            height: auto;
-        }
-        
-        .services .service-content {
-            padding: 20px;
-            text-align: left;
-            color: #333;
-            line-height: 120%;
-        }
-        
-        .services .service-content h2 {
-            font-size: 1.8em;
-            color: #0077B6;
-        }
-        
-        .services .service-content p {
-            font-size: 1em;
-            margin-top: 10px;
-            line-height: 1.6;
-        }
-        
-        .order {
-            padding: 60px 20px;
-            background:rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 800px;
-            margin-bottom: 10rem;
-        }
-        
-        .order h1 {
-            font-size: 2.2em;
-            color: #0077B6;
-        }
-        
-        .order p {
-            font-size: 1em;
-            margin-top: 10px;
-            color: #333;
-        }
-        
-        .order a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 30px;
-            background-color: rgba(0, 119, 182);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            backdrop-filter: blur(5px);
-        }
-        
-        .order a:hover {
-            background-color: rgba(0, 95, 138, 0.8);
-        }
-        
-        footer {
-            background: rgba(161, 217, 242, 0.3);
-            backdrop-filter: blur(15px);
-            text-align: center;
-            padding: 20px;
-        }
-        
-        footer p {
-            margin: 5px 0;
-            color: #333;
-            letter-spacing: 1px;
-        }
-        
-        footer a {
-            color: #0077B6;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-    </style>
 </head>
 <body>
     <header>
@@ -212,8 +14,10 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#carousel">News</a></li>  
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#order">Order</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#map">Location</a></li>
             </ul>
         </nav>
     </header>
@@ -251,15 +55,106 @@
         </div>
     </section>
 
-    <section class="order" id="order">
-        <h1>Order Now</h1>
-        <p>Contact us to discuss your project and get started today!</p>
-        <a href="https://wa.me/6285171710131" target="_blank">Contact Us on WhatsApp</a>
+    <section class="carousel" id="carousel">
+        <h2>What's New?</h2>
+        <div class="carousel-images">
+            <img src="img/1.jpg" alt="Slide 1">
+            <img src="img/2.jpg" alt="Slide 2">
+            <img src="img/3.jpg" alt="Slide 3">
+            <img src="img/4.jpg" alt="Slide 4">
+            <img src="img/5.jpg" alt="Slide 5">
+            <img src="img/6.jpg" alt="Slide 6">
+            <img src="img/7.jpg" alt="Slide 7">
+            <img src="img/8.jpg" alt="Slide 8">
+            <img src="img/9.jpg" alt="Slide 9">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </section>
+        <br> <br>
+    <section class="testimonials" id="testimonials">
+        <h1>What Our Clients Say?</h1>
+        <div class="testimonial active">
+            <img src="img/johnDoe.jpg" alt="Client 1">
+            <h3>John Doe</h3>
+            <p>"VisioCraft transformed our brand identity. Their designs are top-notch!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="img/janeSmith.jpg" alt="Client 2">
+            <h3>Jane Smith</h3>
+            <p>"The team at VisioCraft is incredibly talented and professional. Highly recommend!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="img/emilyJohnson.jpg" alt="Client 3">
+            <h3>Emily Johnson</h3>
+            <p>"Amazing service! They understood our vision and delivered beyond expectations."</p>
+        </div>
     </section>
 
+    <section class="order" id="order">
+        <h1>Place Your Order</h1>
+        <p>Ready to transform your brand? Let us help you create stunning visuals for your business.</p>
+        
+        <form class="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="branding">Branding</option>
+                <option value="web-design">Web Design</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="consulting">Consulting</option>
+            </select>
+            
+            <label for="message">Your Message:</label>
+           
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        
+        <div class="contact-us">
+            <img src="img/logo.jpg" alt="Profile" class="profile-img">
+            <p>Or contact us directly via WhatsApp:</p>
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">Contact Us</a>
+        </div>
+    </section>
+    
+    <section id="map">
+        <h1>Find Us Here</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3296770586758!2d109.3337590737194!3d-7.428721673178662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6559814ade5b79%3A0xaef1b7bab5cba0f0!2sFakultas%20Teknik%20Universitas%20Jenderal%20Soedirman!5e0!3m2!1sid!2sid!4v1733582743134!5m2!1sid!2sid" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    
+    <br> <br>
+
     <footer>
-        <p>&copy; 2024 VisioCraft. All rights reserved.</p>
-        <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+        <p>&copy; 2023 VisioCraft. All rights reserved.</p>
+        <p><a href="#contact">Contact Us</a></p>
     </footer>
 
     <script src="script.js"></script>
