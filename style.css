@@ -375,10 +375,12 @@ button .carousel {
 
 button.prev {
     left: 10px;
+    margin-right: 510px;
 }
 
 button.next {
     right: 10px;
+    margin-left: 510px;
 }
 
 button:hover {
@@ -405,6 +407,57 @@ button:hover {
 .carousel-indicators .dot.active {
     background-color: #333;
 }
+
+/*Style bagian map*/
+#map {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px; /* Batasan lebar maksimum */
+    margin: 40px auto;
+}
+
+#map h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003049;
+    text-align: center;
+}
+
+.map-container {
+    border: 2px solid #003049; /* Menambahkan border */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #003049;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
 
 /* Footer */
 footer {
